@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to bottom, #f0f4f8, #e0e7ef);
+    color: #333;
+    font-family:Arial, Helvetica, sans-serif
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+    padding-left: 550px;
+    padding: 30px;
+    border:3px solid black;
+    background-color: lightsteelblue;
+    line-height: 1.5;
+}
+
+header{
+    background-color: gray;
+}
+footer{
+    background-color: gray;
+
+}
+
+#button:hover {
+    background-color: green;
+
+}
+
+.error {
+    color: red;
+}
+
+.mybtn{
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: rgb(98, 26, 26);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.mybtn:hover {
+    background-color: blue;
+}
+
+.mybtn1{
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: rgb(98, 26, 26);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.mybtn1:hover {
+    background-color: rgb(0, 255, 13);
+}
+
+.input-field {
+    border: 1px solid #ccc; /* Default border color */
+    padding: 8px; /* Add some padding for better visuals */
+}
+
+.input-field.valid {
+    border-color: green; /* Valid input border color */
+}
+
+.input-field.invalid {
+    border-color: red; /* Invalid input border color */
+}
+
+
+
+
+@media (max-width: 600px) {
+    .button {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: calc(100% - 20px);
+    }
+    .content {
+        width: 100%;
+    }
+}

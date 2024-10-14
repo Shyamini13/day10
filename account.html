@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="acc.js"></script>
+    <link rel="stylesheet" href="acc.css">
+</head>
+<body>
+    <header>
+        <h2>create your account</h2>
+        <h3>join us today and start your jurney</h3>
+    </header>
+    <div class="content">
+        <form action="" id="regForm">
+            <section>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="input-field" required><br>
+                <span class="error" id="firstNameError"></span><br>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="input-field" required><br>
+                <span class="error" id="lastNameError"></span><br>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required><br>
+
+                <label>Gender</label>
+    
+                <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female">Female<input type="radio" name="gender" value="other"> Other <br>
+            </section>
+
+            <section>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 123-4567" class="input-field" required><br>
+                <span class="error" id="phoneError"></span><br>
+
+                <label for="email">Email </label>
+                <input type="email" name="" id="email" class="input-field" required><br>
+                <span class="error" id="emailError"></span><br>
+            </section>
+
+            <section>
+                <label for="">Address</label>
+                <input type="text" name="" class="input-field" id="address"><br>
+
+                <label for="">State</label>
+                <select onchange="selectState" name="state" id="state">
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select><br>
+
+                <label for="">city</label>
+                <select name="city" id="city">
+                    <option value=""></option>
+                </select><br>
+            </section>
+
+            <section>
+                <label for="username">Username</label>
+                <input type="text" id="username" class="input-field" required><br>
+                <span class="error" id="userNameError"></span><br>
+
+                <label for="password">Password</label>
+                <input type="password" class="input-field" id="password" required><br>
+                <span class="error" id="passwordError"></span><br>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="input-field" id="confirmPassword" required><br>
+                <span class="error" id="confirmPasswordError"></span><br>
+            </section><br>
+
+            <button class="mybtn1">Signup</button>
+
+        </form>
+        <button class="mybtn">Back</button>
+
+
+    </div>
+
+<footer>
+    <p>already have an account </p>
+    <button class="mybtn">Login</button>
+       
+</footer>
+
+
+</body>
+</html>
